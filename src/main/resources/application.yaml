@@ -1,0 +1,15 @@
+server:
+  port: 8080
+
+spring:
+  rabbitmq:
+    host: 203.202.236.63
+    port: 5672
+    username: rabbit
+    password: x12598325
+    virtual-host: /
+    #开启发布确认模式 生产者--交换机
+    publisher-confirm-type: correlated
+    #允许消息回退  交换机--队列
+    publisher-returns: true
+
